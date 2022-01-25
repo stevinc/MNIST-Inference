@@ -1,0 +1,25 @@
+version: '3.0'
+services:
+  worker:
+    build:
+      dockerfile: Dockerfile
+      context: worker
+    environment:
+      - TS_CONFIG_FILE=config.properties
+
+  api:
+      build:
+        dockerfile: Dockerfile
+        context: api
+      command: gunicorn --timeout 1000 --workers 2 --bind 0.0.0.0:5000 main:app
+      volumes:
+        - ./api:/app
+
+  nginx:
+    build:
+      dockerfile: Dockerfile
+      context: nginx
+    ports:
+      - "5000:80"
+    volumes:
+      - ./nginx:/app

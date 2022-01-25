@@ -1,0 +1,4 @@
+./worker/best_chk.pt
+./worker/dataset/
+./worker/logs/
+./worker/model_store/

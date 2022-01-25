@@ -1,0 +1,9 @@
+flask[async]>=2.0.1
+Flask-Cors==3.0.10
+flask-jwt-extended
+numpy>=1.19.1
+requests>=2.24.0
+pillow>=7.2.0
+aiohttp==3.7.4
+asyncio==3.4.3
+gunicorn==20.1.0

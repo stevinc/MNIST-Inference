@@ -1,0 +1,5 @@
+https://download.pytorch.org/whl/cpu/torch-1.9.0%2Bcpu-cp38-cp38-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.10.0%2Bcpu-cp38-cp38-linux_x86_64.whl
+torch-model-archiver==0.4.2
+torchserve==0.4.2
+captum==0.4.0
